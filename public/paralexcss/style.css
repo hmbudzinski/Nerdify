@@ -1,0 +1,164 @@
+/* Custom Stylesheet */
+
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.responsive-img {
+    background-size: 80%;
+}
+
+[type='radio']:checked+span:after,
+[type='radio'].with-gap:checked+span:after {
+    background-color: white;
+    border: 2px solid white;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+    background-color: white;
+    color: black;
+}
+
+
+/* changes all the other spans on the signup page to white */
+
+.spanColor {
+    color: white;
+}
+
+.content-container {
+    background-color: rgb(0, 0, 255, 0.6);
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+.profileContainer {
+    size: 80%;
+    background-color: rgba(253, 62, 158, 0.6);
+    padding: 10px;
+    margin-bottom: 80px;
+    position: fixed;
+}
+
+.row .col.l9 {
+    background-color: rgba(253, 62, 158, 0.6);
+    padding: 50px, 100px, 50px, 100px;
+    margin-bottom: 80px;
+    position: absolute;
+    left: 170px;
+}
+
+.input-field.col label {
+    color: white;
+}
+
+#first_name {
+    color: white;
+}
+
+#last_name {
+    color: white;
+}
+
+#email {
+    color: white;
+}
+
+#password {
+    color: white;
+}
+
+#fandom1 {
+    color: black !important;
+}
+
+#cosplay {
+    color: white;
+}
+
+.dropdown-content select-dropdown multiple-select-dropdown {
+    color: white;
+}
+
+.dropdown-content li>span {
+    color: black;
+}
+
+.select-wrapper input.select-dropdown {
+    color: white;
+}
+
+.select-wrapper input.select-dropdown {
+    color: white;
+}
+
+#fandom {
+    color: white;
+}
+
+
+/* changes the signup fandom selections to black */
+
+span {
+    color: black;
+}
+
+.sidenav-trigger {
+    color: #fff8e1 amber lighten-5;
+}
+
+.parallax-container {
+    min-height: 360px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+    color: #fff8e1 amber lighten-5;
+}

@@ -1,0 +1,61 @@
+
+
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                 <a href="#" id="yourProfile" class="btn-large waves-effect waves-light teal lighten-1">Your Profile</a>
+                 <a href="#" id="homeBTN" class="btn-large waves-effect waves-light teal lighten-1">Home</a>
+                </li>
+        </ul>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
+
+     <div class="wrapper">
+        <div class="cards">
+
+            {{#each profiles}}
+                <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/daniel-lincoln-NR705beN_CU-unsplash.jpg">
+                    {{!-- <a class="btn-floating halfway-fab waves-effect waves-light red" id="add"><i class="material-icons">add</i></a> --}}
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4" id="name">{{firstName}}<i class="material-icons right">more_vert</i></span>
+                    <p><a id="page" href="/profile/:{{id}}">Visit Their Page</a></p>
+                    <h5><i class="material-icons">mail</i> {{email}}</h5>
+                    
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">About Them:</span>
+                    <h5>Fandoms: {{fandoms}}</h5>
+                    <h5>{{gif}}</h5><br>
+                    {{!-- <h5>Dad Joke: {{dadJoke}}</h5> --}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+     <footer class="page-footer amber-lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Made by:</h5>
+                    <p class="grey-text text-lighten-4">Hayley Budzinski, Mel Garza, Neena John Britto, Rozzie Killingstad,
+                        and Sydney Preston</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
